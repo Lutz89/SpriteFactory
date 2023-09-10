@@ -9,9 +9,7 @@
                 <ResourceDictionary Source="Themes/Generic.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Blue.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseDark.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Themes/Dark.Blue.xaml" />
                 <ResourceDictionary Source="Themes/VS2013/DarkTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
@@ -44,7 +42,7 @@
                 <Setter Property="Margin" Value="5" />
             </Style>
 
-            <Style x:Key="HiddenButtonStyle" TargetType="Button" BasedOn="{StaticResource DarkMetroWindowButtonStyle}">
+            <Style x:Key="HiddenButtonStyle" TargetType="Button" BasedOn="{StaticResource MahApps.Styles.Button.MetroWindow.Dark}">
                 <Style.Triggers>
                     <DataTrigger Binding="{Binding IsMouseOver, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=ListBoxItem}}" Value="False">
                         <Setter Property="Visibility" Value="Hidden" />

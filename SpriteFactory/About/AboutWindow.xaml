@@ -14,7 +14,7 @@
     ShowIconOnTitleBar="False"
     ShowInTaskbar="False"
     WindowStartupLocation="CenterOwner"
-    Background="{StaticResource WindowBackgroundBrush}" d:DataContext="{d:DesignInstance about:AboutWindowViewModel}">
+    Background="{StaticResource MahApps.Brushes.Window.Background}" d:DataContext="{d:DesignInstance about:AboutWindowViewModel}">
 
     <DockPanel LastChildFill="True">
         <Button DockPanel.Dock="Bottom" HorizontalAlignment="Center" MinWidth="100" Padding="10" Margin="10" Content="OK" Click="OkayButton_Click" />
